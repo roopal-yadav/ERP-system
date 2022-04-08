@@ -6,7 +6,9 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #333333;
 }
-
+button:hover{
+  opacity:0.6;
+}
 .box-form {
   margin: 0 auto;
   width: 80%;

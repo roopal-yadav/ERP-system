@@ -6,4 +6,5 @@ app_name='student'
 urlpatterns = [
     path('', views.index, name='index'),
     #re_path(r'^$',views.index,name="index"),
+	re_path(r'^login/',views.login,name='login'),
 ]

@@ -7,3 +7,9 @@ class studentlogin(models.Model):
     studentpwd=models.CharField(max_length=15, validators=[
             MinLengthValidator(8, 'the field must contain at least 50 characters')
             ])
+    isactive=models.IntegerField(null=True)
+
+    def __str__(self):
+        return self.studentid
+
+    stud_obj = models.Manager()

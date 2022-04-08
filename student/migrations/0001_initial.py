@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('studentid', models.CharField(max_length=20)),
-                ('studentpwd', models.CharField(max_length=15, validators=[django.core.validators.MinLengthValidator(8, 'the field must contain at least 50 characters')])),
+                ('studentpwd', models.CharField(max_length=15, validators=[django.core.validators.MinLengthValidator(8, 'the field must contain at least 8 characters')])),
             ],
         ),
     ]

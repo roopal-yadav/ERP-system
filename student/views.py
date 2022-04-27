@@ -21,8 +21,8 @@ def login(request):
                 else:
                     print("Someone tried to login and failed.")
                     print("They used username: {} and password: {}".format(username,password))
-                    return redirect('/')
+                    return redirect('/student')
             except Exception as identifier:
-                return redirect('/')
+                return redirect('/student')
         else:
             return render(request, 'studentlogin.html')

@@ -20,10 +20,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #re_path(r'^',include('homepage.urls')),
     path('',include('homepage.urls')),
-	path('student/login/',include('student.urls')),
-	path('teacher/login/',include('teacher.urls')),
+	path('student/',include('student.urls')),
+	path('teacher/',include('teacher.urls')),
     #student_login
-    re_path(r'^student/$',include('student.urls')),
+    #re_path(r'^student/$',include('student.urls')),
     #teacher_login
-    re_path(r'^teacher/$',include('teacher.urls')),
+    #re_path(r'^teacher/$',include('teacher.urls')),
 ]

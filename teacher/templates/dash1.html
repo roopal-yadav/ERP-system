@@ -3,8 +3,6 @@
 	{% load static %}
 
 	<head>
-
-
 		<title>Dashboard </title>
 		<!-- Favicon icon -->
 		<link rel="icon" type="image/png" sizes="16x16" href={% static "images/favicon.png" %}>
@@ -59,10 +57,11 @@
 									</a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<ul class="list-unstyled">
-
-
 										</ul>
 										<a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+									</div>
+									<div>
+										<a href="/teacher"><button type="submit" class="btn btn-danger">Logout</button></a>
 									</div>
 								</li>
 							</ul>
@@ -79,14 +78,14 @@
 				<div class="dlabnav-scroll">
 					<ul class="metismenu" id="menu">
 						<li class="nav-label first">Main Menu</li>
-						<li><a class="has-arrow" href="/student/login" aria-expanded="false">
+						<li><a class="has-arrow" href="/teacher/login" aria-expanded="false">
 								<i class="la la-home"></i>
 								<span class="nav-text">Dashboard</span>
 							</a>
 						</li>
-						<li><a class="ai-icon" href="#" aria-expanded="false">
+						<li><a class="ai-icon" href="/teacher/tt" aria-expanded="false">
 								<i class="la la-calendar"></i>
-								<span class="nav-text">Event Management</span>
+								<span class="nav-text">Time Table</span>
 							</a>
 						</li>
 						<li><a class="has-arrow" href="#" aria-expanded="false">

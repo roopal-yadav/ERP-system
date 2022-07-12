@@ -3,7 +3,8 @@ from django.http import HttpResponse
 from django.template import loader
 from django.contrib.auth import authenticate,login,logout
 from django.views.generic import View
-
+from .models import teacherlogin
+from branch.models import subjects,branch_detail
 
 def index(request):
     return render(request,'login.html')
